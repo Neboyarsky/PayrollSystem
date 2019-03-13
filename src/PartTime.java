@@ -1,5 +1,3 @@
-package Classes;
-
 public class PartTime extends Employee{
 
     private double rate;

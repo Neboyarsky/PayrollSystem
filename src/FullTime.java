@@ -1,5 +1,3 @@
-package Classes;
-
 public class FullTime extends Employee{
 
     private double salary;

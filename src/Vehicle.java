@@ -1,5 +1,3 @@
-package Classes;
-
 public class Vehicle {
     private String plateNumber;
     private String colour;

@@ -1,5 +1,3 @@
-package Classes;
-
 public abstract class Employee {
     // class variables
     private int empId;
