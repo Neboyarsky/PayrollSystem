@@ -7,8 +7,8 @@ public class PartTime extends Employee{
     private double hoursWorked;
 
 
-    // class constructor
-    public FullTime(int id, String name, double sal,
+    // class constructors
+    public PartTime(int id, String name, double rate,
                     double hoursWorked2, Vehicle v1) {
         super(id, name, v1);
         this.rate = rate;
@@ -17,8 +17,6 @@ public class PartTime extends Employee{
 
     // methods area
     public double calculatePay() {
-        private double salary;
-        private double overtime;
 
         System.out.println("Part Time Employee.");
         return (this.getRate() * this.getHoursWorked());

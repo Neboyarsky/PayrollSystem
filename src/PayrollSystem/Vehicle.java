@@ -1,6 +1,8 @@
 package PayrollSystem;
 
 public class Vehicle {
+
+    // variables area
     private String plateNumber;
     private String colour;
 

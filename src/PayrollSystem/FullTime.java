@@ -16,8 +16,6 @@ public class FullTime extends Employee{
 
     // methods area
     public double calculatePay() {
-        private double salary;
-        private double overtime;
 
         System.out.println ("Full Time Employee.");
         return (this.getSalary() + this.getOvertime());
