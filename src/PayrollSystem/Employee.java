@@ -12,7 +12,7 @@ public abstract class Employee {
      * will be defined within FullTime and PartTime classes
      * as these both classes are subclasses of Employee (abstract) class
      */
-    public abstract double calculatePay() ;
+    abstract public double calculatePay();
 
     public Employee(int id, String name, Vehicle vehicle) {
     }

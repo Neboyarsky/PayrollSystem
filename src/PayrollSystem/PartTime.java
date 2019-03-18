@@ -7,8 +7,8 @@ public class PartTime extends Employee{
     private double hoursWorked;
 
 
-    // class constructors
-    public PartTime(int id, String name, double rate,
+    // class constructor
+    public PartTime(int id, String name, double sal,
                     double hoursWorked2, Vehicle v1) {
         super(id, name, v1);
         this.rate = rate;
