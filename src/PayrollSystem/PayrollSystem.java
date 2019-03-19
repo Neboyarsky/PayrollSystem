@@ -110,31 +110,31 @@ public class PayrollSystem {
         double totalCompanyPay = 0.0;
         double individualPay;
 
-            //calculating salary - manipulating array only
-            for (int i = 0; i<pArrEmp.size(); i++) {
-                System.out.println("\n**************************\n");
-                individualPay = (pArrEmp.get(i)).calculatePay();
-                Vehicle v = (pArrEmp.get(i)).getVehicle();
-                String hasVehicle;
+        //calculating salary - manipulating array only
+        for (int i = 0; i<pArrEmp.size(); i++) {
+            System.out.println("\n**************************\n");
+            individualPay = (pArrEmp.get(i)).calculatePay();
+            Vehicle v = (pArrEmp.get(i)).getVehicle();
+            String hasVehicle;
 
-                //check if employee has a vehicle or not
-                if (v == null)
-                    hasVehicle = "No";
-                else
-                    hasVehicle = "Yes";
+            //check if employee has a vehicle or not
+            if (v == null)
+                hasVehicle = "No";
+            else
+                hasVehicle = "Yes";
 
-                System.out.println("Employee Name: " + (pArrEmp).get(i).getName());
-                System.out.println("Has Vehicle: " + hasVehicle);
+            System.out.println("Employee Name: " + (pArrEmp).get(i).getName());
+            System.out.println("Has Vehicle: " + hasVehicle);
 
-                if (v != null) {
-                    System.out.println("Plate Number: " + v.getPlateNumber());
-                    System.out.println("Colour: " + v.getColour());
-                }
-
-                System.out.println("Take Home Pay: " + individualPay);
-
-                totalCompanyPay = totalCompanyPay + individualPay;
+            if (v != null) {
+                System.out.println("Plate Number: " + v.getPlateNumber());
+                System.out.println("Colour: " + v.getColour());
             }
+
+            System.out.println("Take Home Pay: " + individualPay);
+
+            totalCompanyPay = totalCompanyPay + individualPay;
+        }
         System.out.print("-------------------------\nTotal payroll of the company: " + totalCompanyPay + "\n-------------------------");
     }
 }
