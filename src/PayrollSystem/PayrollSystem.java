@@ -74,7 +74,7 @@ public class PayrollSystem {
         Scanner kbd = new Scanner(System.in);
 
         System.out.println(""
-                + "/* *******************************************/"
+                + "/* *****************************************/"
                 + "\n/* 1. Add FullTime Employee                *"
                 + "\n/* 2. Add PartTime Employee                *"
                 + "\n/* 3. Calculate Payroll                    *"
@@ -135,6 +135,6 @@ public class PayrollSystem {
 
             totalCompanyPay = totalCompanyPay + individualPay;
         }
-        System.out.print("-------------------------\nTotal payroll of the company: " + totalCompanyPay + "\n-------------------------");
+        System.out.println("-------------------------\nTotal payroll of the company: " + totalCompanyPay + "\n-------------------------");
     }
 }
